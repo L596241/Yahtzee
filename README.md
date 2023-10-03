@@ -1,6 +1,6 @@
 # Yahtzee Game Web Application
 
-#### Video Demo: [https://www.youtube.com/watch?v=DOxZvnX1fGs]
+#### This app is hosted and can be tested directly here: [[https://www.youtube.com/watch?v=DOxZvnX1fGs](https://mxlars.pythonanywhere.com/)]
 
 ## Description
 
