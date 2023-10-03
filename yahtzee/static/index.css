@@ -1,0 +1,91 @@
+html, body {
+    height: 95%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D1117;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: auto;
+}
+
+div {
+    height: fit-content;
+    width: 100%;
+    border-style: solid;
+    border-radius: 0.5em;
+    background-color: #30363d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div#menuContainer{
+    height:95%;
+    width: 95%;
+    position: relative;
+    top:22px;
+    overflow: auto;
+}
+
+button#adminButton  {
+    text-align: center;
+    background-color: inherit;
+    color: white;
+    border-radius: 0.5em;
+    border-width: 0.5px;
+    position: relative;
+    top: 11px;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+    border: solid;
+    height: fit-content;
+    border-radius: 0.5em;
+    padding: 5px;
+    border-width: 0.5px;
+}
+
+input {
+    text-align:center;
+    background-color: inherit;
+    color:white;
+    border-radius: 0.5em;
+    border-width: 0.5px;
+}
+.games {
+    height: 85%;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    border-style:none;
+    overflow-y: auto;
+    padding-top: 25%;
+    padding-bottom:2.5%;
+}
+.game {
+    width: 60%;
+    height: 15%;
+    min-height: 120px;
+    display: flex;
+    align-item: center;
+    justify-content: center;
+}
+
+
+button#logOut {
+    position: fixed;
+    margin-bottom: auto;
+    margin-left:auto;
+}
+

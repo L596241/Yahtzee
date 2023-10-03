@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Click to play
+{% endblock %}
+
+{% block content %}
+  <div class="d-flex flex-column justify-content-center align-items-center">
+    <h1 class="mb-4">Select the amount of players</h1>
+    <form action="/gameview" method="POST">
+      <select name="players">
+        <option value="1">1 Player</option>
+        <option value="2">2 Players</option>
+        <option value="3">3 Players</option>
+        <option value="4">4 Players</option>
+      </select>
+      <input type="submit" value="Play Game">
+    </form>
+    <div class="mt-4">
+        <img src="/static/images/yahtzee.jpg" alt="Yahtzee" style="max-width: 100%; height: auto;">
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

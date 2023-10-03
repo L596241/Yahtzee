@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Default styles for all screen sizes */
+html, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0D1117;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-size: 14px; /* Adjust the base font size here */
+  box-sizing: border-box;
+}
+
+.highlighted-text {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+}
+
+button#backToHomePage {
+  margin-bottom: auto;
+  left: -1.5%;
+  top: 5%;
+}
+
+div#GameContainer {
+  max-height: 90%;
+  width: 85%;
+  max-width: 1200px;
+  border-style: solid;
+  border-radius: 0.5em;
+  background-color: #30363d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 70px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  overflow: auto;
+  user-select: none;
+}
+
+div#GameContainer h1 {
+  font-size: 28px; /* Adjust the h1 font size */
+  margin-bottom: 15px;
+}
+
+div#root {
+  width: 100%;
+}
+
+button#roll-dice-btn {
+  margin-top: 5px;
+  margin-bottom: 20px; /* Add margin bottom to create space */
+  font-size: 16px;
+}
+
+#dice-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  margin: 0 auto;
+  font-size: 12px;
+  width: 100%;
+  user-select: none;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 1px solid #ddd;
+}
+
+form button {
+  height: 36px;
+  font-size: 16px;
+}
+
+.animated-dice {
+  width: 40px;
+  height: 40px;
+  margin-right: 3px;
+}
+
+.animated-dice.selected {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 0.5rem;
+  border-color: green;
+  background: green;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button-container button {
+    padding-left: -221px;
+    padding-right: -76px;
+    height: 40px;
+    margin-left: -10px;
+    margin-right: -8px;
+    margin-bottom: 16px;
+}
+
+#finishRoundForm {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+#result {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.dice-title {
+  font-size: 24px;
+}
+
+p#gameOverMsg {
+  position: relative;
+  top: -62px;
+}
+
+/* CSS to highlight the current round */
+.current-round {
+  background-color: lightgreen;
+}
+
+/* CSS to style the round scores */
+td.round-score {
+  text-align: center;
+}
+/* CSS to mark categories green according to the rounds */
+.category-name {
+  font-weight: bold;
+  color: green;
+}
+
+<style>
+  .category-name {
+    font-weight: bold;
+    color: green;
+  }
+</style>
+
+/* Adding flash messages styling */
+.flash-messages ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.flash-messages ul li {
+  color: #33cc33;
+  font-size: 1.1rem;
+  font-weight: bold;
+}

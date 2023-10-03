@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Yahtzee Rules
+{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-center">
+  <div>
+    <h1>Yahtzee Rules</h1>
+    <div style="max-width: 600px;">
+      <ol>
+        <li>The game consists of 15 rounds, each round representing a scoring category.</li>
+        <li>In each round, a player gets up to three opportunities to roll the dice.</li>
+        <li>The player can choose to re-roll some or all dice on the second and third throw.</li>
+        <li>After rolling the dice, the player scores based on the category of the current round and the dice values.</li>
+        <li>Each category can only be scored once and the game ends when all categories have been scored.</li>
+        <li>If a player scores a total of 63 points or more in the first six rounds (Ones through Sixes), they will receive a bonus of 35 points.</li>
+        <li>The bonus is added to the player's total score.</li>
+        <li>The player with the highest total score at the end of the game wins.</li>
+      </ol>
+    </div>
+    <p><strong>Good luck and have fun playing Yahtzee!</strong></p>
+    <p class="link-paragraph">For more info and complete rules <a href="https://en.wikipedia.org/wiki/Yahtzee">click here</a></p>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}

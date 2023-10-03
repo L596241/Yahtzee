@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yatzy</title>
+  <link rel="stylesheet" href="/static/yahtzee.css"> <!-- Add CSS file path -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <button id="backToHomePage" type="button" style="background-color: #fff; border: 1px solid #000; outline: none; position: relative; z-index: 1;" onclick="location.href='/gameview'">
+    <i class="fa fa-home" aria-hidden="true"></i>
+  </button>
+
+  <div id="GameContainer">
+    <h1>Yahtzee</h1>
+
+    <!-- Add code to display flash messages -->
+    <div class="flash-messages">
+      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+      <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% endwith %}
+
+
+    </div>
+
+    <div class="button-container">
+      <div id="root">
+        <button id="roll-dice-btn" class="game-button" data-dicebutton>Roll dices</button>
+      </div>
+      <form id="finishRound" action="/roundController" method="POST">
+        <input type="hidden" name="diceValues" id="diceValues">
+        <input type="hidden" name="currentGame" value="{{ currentGame }}">
+        <button type="submit" class="game-button">Finish round</button>
+      </form>
+    </div>
+
+    <div id="dice-container"></div>
+    <table>
+        <thead>
+          <tr>
+            <th>Description</th>
+            <!-- Add ids to these th elements -->
+            <th id="player1Label">Player 1 Score</th>
+            <th id="player2Label">Player 2 Score</th>
+          </tr>
+        </thead>
+        <tbody id="roundResults">
+          <!-- Score rows will be added here by the JS code -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Total Score:</th>
+            <td id="totalScorePlayer1" style="text-align: center;"></td>
+            <td id="totalScorePlayer2" style="text-align: center;"></td>
+          </tr>
+        </tfoot>
+      </table>
+
+    <script src="/static/yahtzee2.js" defer></script>
+  </div>
+
+</body>
+
+</html>

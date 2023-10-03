@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block content %}
+    <div class="d-flex justify-content-center">
+        <form action="/login" method="post">
+            <!-- Show flash messages when wrong input -->
+            <div class="text-center">
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        <ul class="flash-messages">
+                            {% for message in messages %}
+                                <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                {% endwith %}
+            </div>
+            <div class="mb-3">
+                <input autocomplete="off" autofocus class="form-control form-control-lg" id="username"
+                    name="username" placeholder="Username" type="text">
+            </div>
+            <div class="mb-3">
+                <input class="form-control form-control-lg" id="password" name="password" placeholder="Password"
+                    type="password">
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary" type="submit">Log In</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="text-center" style="margin-top: 10px;">
+        <p>Not a user yet? <a href="/register">Click to register</a></p>
+    </div>
+{% endblock %}

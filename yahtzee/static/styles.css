@@ -1,0 +1,8 @@
+ul.flash-messages {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  ul.flash-messages li {
+    color: red;
+  }
