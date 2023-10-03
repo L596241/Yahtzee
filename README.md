@@ -1,6 +1,6 @@
 # Yahtzee Game Web Application
 
-#### This app is hosted and can be tested directly here: [[https://www.youtube.com/watch?v=DOxZvnX1fGs](https://mxlars.pythonanywhere.com/)]
+#### This app is hosted and can be tested directly here: [https://mxlars.pythonanywhere.com/]
 
 ## Description
 
